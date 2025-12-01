@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-ENV TZ=Asia/Amaty
+ENV TZ=Asia/Almaty
 WORKDIR /boxfuse
 
 RUN apt update
@@ -16,7 +16,7 @@ ENV PATH="$PATH:/usr/share/tomcat9/bin"
 ENV CATALINA_HOME=/usr/share/tomcat9
 ENV CATALINA_BASE=/var/lib/tomcat9
 ENV CATALINA_TMPDIR=/tmp
-ENV JAVA_OPTS=-Djava.awt.headless=true
+ENV JAVA_OPTS="-Djava.awt.headless=true"
 
 EXPOSE 8080
 
